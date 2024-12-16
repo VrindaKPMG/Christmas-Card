@@ -44,23 +44,22 @@
 
         .snowflake {
             font-size: 2rem;
-            animation: fall 3s linear infinite;
+            animation: fall 5s linear infinite;
             position: absolute;
         }
         .snowflake1 {
             font-size: 2rem;
-            animation: fall 3.5s linear infinite;
+            animation: fall 5.5s linear infinite;
             position: absolute;
         }
         .snowflake2 {
             font-size: 1.5rem;
-            animation: fall 4s linear infinite;
+            animation: fall 6s linear infinite;
             position: absolute;
         }
-
         .snowflake3 {
             font-size: 1.5rem;
-            animation: fall 4.5s linear infinite;
+            animation: fall 6.5s linear infinite;
             position: absolute;
         }
 
@@ -68,22 +67,27 @@
             0% {
                 top: -10%;
                 left: calc(100% * var(--pos));
+                transform: translateX(0px);
             }
             100% {
-                top: 110%;
+                top: 200%;
                 left: calc(100% * var(--pos) + 5%);
+                transform: translateX(50px);
             }
         }
 
         .gif-box {
-            display: flex;
-            justify-content: center;
+            display:flex;
             flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
         }
         .gif-box img {
             margin-top: 1cm;
-            width: 200px;
-            height: auto;
+            flex: 0 0 calc(3.33% - 20px);
+            max-width:  calc(30% - 20px);
+            height: 250px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
@@ -97,14 +101,19 @@
     <div class="gif-box">
         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGoycWxudXVyODZmZjFibG5teHdqbGN3ZGt1eDJha3UzZDh0eW5hbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WmkqburJqXziM/giphy.gif" alt="Christmas Dance" />
         <img src="https://media.giphy.com/media/xTk9ZVpnoAWBzgOCxq/giphy.gif?cid=ecf05e47wlz8djdj95iakz8hwd7w5jvr0ov0wn8mag495wl8&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Chritmas Cat" />
+        <img src="https://media.giphy.com/media/jKBE0G60uWOSde3UPW/giphy.gif?cid=790b7611sxlf98ywj32k3j1xzdkkpkwx5xeqkq9ckc15za0w&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Lizard in a blizzard" />
         <img src="https://media.giphy.com/media/R7AW255ijTdV6/giphy.gif?cid=790b7611pg5lzjiqhbmm4gvd8o2mkqg3ufij7novxtyiw440&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Chritmas Pusheen" />
         <img src="https://media.giphy.com/media/Hu2sFyzRqoAPm/giphy.gif?cid=790b7611pg5lzjiqhbmm4gvd8o2mkqg3ufij7novxtyiw440&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Candles" />
+        <img src="https://media.giphy.com/media/KbSgPCivyyjwshm2uk/giphy.gif?cid=ecf05e47fh8qwqcat6pulowj2zknkq2w8k1vti7xukaliwul&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Gingerbread house with dino" />
         <img src="https://media.giphy.com/media/VzBaUcHFKgxhkQqxZd/giphy.gif?cid=ecf05e47i1nah3gb47bpi0y5aetafs0p96o2nd2chmwxbdt4&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="The child in the snow" />
         <img src="https://media.giphy.com/media/Y2ynSXoFK2O9rkkOql/giphy.gif?cid=ecf05e47pk45kzejwplu2t4bzg1iv3hlhc3qvwyp15k1f9yl&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Happy Holidays" />
         <img src="https://media.giphy.com/media/CnSDTkB5nXLsvJpAzt/giphy.gif?cid=790b7611ieo5ikxqjhqz0tzxgtup31avuua3tvm87ofp0vpw&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="2025" />
         <img src="https://media.giphy.com/media/KFUx0Rtz7p0HTzbJ7x/giphy.gif?cid=790b7611ngugufu6p1nf7v7b26gsoo81zhsy0ktm6qyenru8&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Monster in the snow" />
+        <img src="https://media.giphy.com/media/rYudCp9cEZMZm49iEt/giphy.gif?cid=790b7611sxlf98ywj32k3j1xzdkkpkwx5xeqkq9ckc15za0w&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Froggy lick" />
         <img src="https://media.giphy.com/media/26xBwFcBGPLNfGbkY/giphy.gif?cid=790b7611ngugufu6p1nf7v7b26gsoo81zhsy0ktm6qyenru8&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Panda in the snow" />
-
+        <img src="https://media.giphy.com/media/KlClzsr4CVN3b9ztVK/giphy.gif?cid=790b7611sjdfc9tjnhx7gd4hncq9edx301998lsw9ks9wq8z&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Fireworks new year london" />
+        <img src="https://media.giphy.com/media/9w475hDWEPVlu/giphy.gif?cid=790b76113lbihj7j038jpshj3e4k73hewauit4059x105irn&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Minions" />
+        <img src="https://media.giphy.com/media/9JrvLb0fnrn7k1ZjhX/giphy.gif?cid=790b76113lbihj7j038jpshj3e4k73hewauit4059x105irn&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Doggy" />
     </div>
     
 
