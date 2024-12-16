@@ -47,6 +47,22 @@
             animation: fall 3s linear infinite;
             position: absolute;
         }
+        .snowflake1 {
+            font-size: 2rem;
+            animation: fall 3.5s linear infinite;
+            position: absolute;
+        }
+        .snowflake2 {
+            font-size: 1.5rem;
+            animation: fall 4s linear infinite;
+            position: absolute;
+        }
+
+        .snowflake3 {
+            font-size: 1.5rem;
+            animation: fall 4.5s linear infinite;
+            position: absolute;
+        }
 
         @keyframes fall {
             0% {
@@ -58,14 +74,27 @@
                 left: calc(100% * var(--pos) + 5%);
             }
         }
+
+        .gif-box {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .gif-box img {
+            margin-top: 1cm;
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
     </style>
 </head>
 <body>
     <div class="card">
         <h1>Happy Holidays, Curve Team!</h1>
-        <p>Wishing you joy and warmth (especially in the office)!</p>
+        <p>Wishing you joy,  warmth (especially in the office) and jolliness as we swerve into the new year!</p>
     </div>
-    <div>
+    <div class="gif-box">
         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGoycWxudXVyODZmZjFibG5teHdqbGN3ZGt1eDJha3UzZDh0eW5hbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WmkqburJqXziM/giphy.gif" alt="Christmas Dance" />
         <img src="https://media.giphy.com/media/xTk9ZVpnoAWBzgOCxq/giphy.gif?cid=ecf05e47wlz8djdj95iakz8hwd7w5jvr0ov0wn8mag495wl8&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Chritmas Cat" />
         <img src="https://media.giphy.com/media/R7AW255ijTdV6/giphy.gif?cid=790b7611pg5lzjiqhbmm4gvd8o2mkqg3ufij7novxtyiw440&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Chritmas Pusheen" />
@@ -80,10 +109,25 @@
     
 
     <!-- Snowflakes -->
-    <span class="snowflake" style="--pos: 0.1;">❄</span>
-    <span class="snowflake" style="--pos: 0.3;">❄</span>
-    <span class="snowflake" style="--pos: 0.5;">❄</span>
-    <span class="snowflake" style="--pos: 0.7;">❄</span>
-    <span class="snowflake" style="--pos: 0.9;">❄</span>
+    <span class="snowflake" style="--pos: 0;">❄</span>
+    <span class="snowflake1" style="--pos: 0.1;">❄</span>
+    <span class="snowflake" style="--pos: 0.2;">❄</span>
+    <span class="snowflake1" style="--pos: 0.3;">❄</span>
+    <span class="snowflake" style="--pos: 0.4;">❄</span>
+    <span class="snowflake1" style="--pos: 0.5;">❄</span>
+    <span class="snowflake" style="--pos: 0.6;">❄</span>
+    <span class="snowflake1" style="--pos: 0.7;">❄</span>
+    <span class="snowflake" style="--pos: 0.8;">❄</span>
+    <span class="snowflake1" style="--pos: 0.9;">❄</span>
+    <span class="snowflake2" style="--pos: 0;">❄</span>
+    <span class="snowflake3" style="--pos: 0.1;">❄</span>
+    <span class="snowflake2" style="--pos: 0.2;">❄</span>
+    <span class="snowflake3" style="--pos: 0.3;">❄</span>
+    <span class="snowflake2" style="--pos: 0.4;">❄</span>
+    <span class="snowflake3" style="--pos: 0.5;">❄</span>
+    <span class="snowflake2" style="--pos: 0.6;">❄</span>
+    <span class="snowflake3" style="--pos: 0.7;">❄</span>
+    <span class="snowflake2" style="--pos: 0.8;">❄</span>
+    <span class="snowflake3" style="--pos: 0.9;">❄</span>
 </body>
 </html>
