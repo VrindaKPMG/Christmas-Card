@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curve Chrsitmas Card</title>
+    <style>
+        body {
+            background-color: #12232e;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #ee2ebb, #1736e6);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            margin-top: 50px;
+            animation: float 3s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .card h1 {
+            font-size: 2.5rem;
+        }
+
+        .card p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .snowflake {
+            font-size: 2rem;
+            animation: fall 3s linear infinite;
+            position: absolute;
+        }
+
+        @keyframes fall {
+            0% {
+                top: -10%;
+                left: calc(100% * var(--pos));
+            }
+            100% {
+                top: 110%;
+                left: calc(100% * var(--pos) + 5%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Happy Holidays, Curve Team!</h1>
+        <p>Wishing you joy and warmth (especially in the office)!</p>
+    </div>
+    <div>
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGoycWxudXVyODZmZjFibG5teHdqbGN3ZGt1eDJha3UzZDh0eW5hbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WmkqburJqXziM/giphy.gif" alt="Christmas Dance" />
+        <img src="https://media.giphy.com/media/xTk9ZVpnoAWBzgOCxq/giphy.gif?cid=ecf05e47wlz8djdj95iakz8hwd7w5jvr0ov0wn8mag495wl8&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Chritmas Cat" />
+        <img src="https://media.giphy.com/media/R7AW255ijTdV6/giphy.gif?cid=790b7611pg5lzjiqhbmm4gvd8o2mkqg3ufij7novxtyiw440&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Chritmas Pusheen" />
+        <img src="https://media.giphy.com/media/Hu2sFyzRqoAPm/giphy.gif?cid=790b7611pg5lzjiqhbmm4gvd8o2mkqg3ufij7novxtyiw440&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Candles" />
+        <img src="https://media.giphy.com/media/VzBaUcHFKgxhkQqxZd/giphy.gif?cid=ecf05e47i1nah3gb47bpi0y5aetafs0p96o2nd2chmwxbdt4&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="The child in the snow" />
+        <img src="https://media.giphy.com/media/Y2ynSXoFK2O9rkkOql/giphy.gif?cid=ecf05e47pk45kzejwplu2t4bzg1iv3hlhc3qvwyp15k1f9yl&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Happy Holidays" />
+        <img src="https://media.giphy.com/media/CnSDTkB5nXLsvJpAzt/giphy.gif?cid=790b7611ieo5ikxqjhqz0tzxgtup31avuua3tvm87ofp0vpw&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="2025" />
+        <img src="https://media.giphy.com/media/KFUx0Rtz7p0HTzbJ7x/giphy.gif?cid=790b7611ngugufu6p1nf7v7b26gsoo81zhsy0ktm6qyenru8&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Monster in the snow" />
+        <img src="https://media.giphy.com/media/26xBwFcBGPLNfGbkY/giphy.gif?cid=790b7611ngugufu6p1nf7v7b26gsoo81zhsy0ktm6qyenru8&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Panda in the snow" />
+
+    </div>
+    
+
+    <!-- Snowflakes -->
+    <span class="snowflake" style="--pos: 0.1;">❄</span>
+    <span class="snowflake" style="--pos: 0.3;">❄</span>
+    <span class="snowflake" style="--pos: 0.5;">❄</span>
+    <span class="snowflake" style="--pos: 0.7;">❄</span>
+    <span class="snowflake" style="--pos: 0.9;">❄</span>
+</body>
+</html>
